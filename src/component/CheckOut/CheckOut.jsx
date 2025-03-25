@@ -18,7 +18,7 @@ export default function CheckOut() {
 
         try {
             const res = await axios.post(
-                `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=http://localhost:5173`,
+                `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=https://fresh-cart-ten-wine.vercel.app/`,
                 shippingAddress,
                 {
                     headers: { token: tkn }
